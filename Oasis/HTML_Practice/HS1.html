@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yo MAMA PHAT</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: lightcoral;
+            text-align : center;
+        }
+    </style>
+</head>
+<body>
+    <h1> yo mama so fat that she goes for a roll not a stroll</h1>
+    <p>
+
+    this is a funny yo mama joke storage area, enjoy your stay
+     </p>
+
+    <button id = "button">Click me!</button>
+
+    <h2>
+        Type your favorite joke here!:
+        <input type="text" id="jokeInput" placeholder="Enter your joke here">
+        <button onclick="submitJoke()">Submit</button>
+    </h2>
+    
+
+    <script>
+        function submitJoke() {
+            const input = document.getElementById('jokeInput');
+            const joke = input.value;
+            if (joke) {
+                alert('Your joke has been submitted: ' + joke);
+                input.value = '';
+            } else {
+                alert('Please enter a joke before submitting.');
+            }
+            document.getElementById(output).innerText = joke
+            
+            document.getElementById(userInput).value ="";
+        }
+          
+            
+        </script>
+</body>
+</html>
